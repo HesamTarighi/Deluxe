@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply text-text_light font-varela;
+    }
+
+    ::after, ::before {
+        content: '';
+        position: absolute;
+    }
+
+    button {
+        @apply uppercase font-roboto;
+    }
+
+    [aria-label = "icon"] {
+        user-select: none;
+    }
+
+    a {
+        @apply hover:text-primary;
+    }
+}
+
+@layer components {
+    /* button */
+        /* size */
+        .sm-button {
+            @apply px-2 py-1 text-[13px];
+        }
+        .md-button {
+            @apply px-4 py-2 text-[15px];
+        }
+        .lg-button {
+            @apply px-7 py-4;
+        }
+        .xl-button {
+            @apply px-8 py-3;
+        }
+
+        /* face */
+            /* glass */
+            .glass-button {
+                @apply md-button rounded-sm bg-black/20 filter backdrop-blur-lg;
+            }
+            /* primary button */
+            .primary-button {
+                @apply bg-primary rounded-full flex items-center primary-hover;
+            }
+            /* outline button */
+            .outline-button {
+                @apply xl-button bg-transparent border-2 border-white/40 rounded-full outline-hover;
+            }
+
+        /* hover effect */
+        .primary-hover {
+            @apply ring-primary/50 hover:ring-4 transition-all duration-200;
+        }
+
+        .outline-hover {
+            @apply hover:border-primary hover:text-primary transition-all duration-200;
+        }
+}
+
+@layer utilities {
+    /* Positions */
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .center-x {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .center-y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Direction */
+    .rtl {
+        direction: rtl;
+    }
+
+    .ltr {
+        direction: ltr;
+    }
+}
