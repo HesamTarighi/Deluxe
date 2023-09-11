@@ -45,7 +45,7 @@
                         <!-- product image box -->
                         <div>
                             <div class="py-10">
-                                <img :src="product.image" />
+                                <img :src="'./src/assets/images/products/' + product.image" />
                             </div>
                         </div>
                         <hr class="border-[1px] border-secondary" />
@@ -84,14 +84,14 @@
 
     // data
     const products = [
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: '/src/assets/images/products/tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'tire.png' },
     ]
 </script>

@@ -16,9 +16,9 @@
 
     // data
     const sponsors = [
-        { href: '', logo: '/src/assets/logo/instagram.png' },
-        { href: '', logo: '/src/assets/logo/ferrari.png' },
-        { href: '', logo: '/src/assets/logo/lamborghini.png' },
-        { href: '', logo: '/src/assets/logo/disney.svg' },
+        { href: '', logo: './src/assets/logo/instagram.png' },
+        { href: '', logo: './src/assets/logo/ferrari.png' },
+        { href: '', logo: './src/assets/logo/lamborghini.png' },
+        { href: '', logo: './src/assets/logo/disney.svg' },
     ]
 </script>

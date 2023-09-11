@@ -18,7 +18,7 @@
 
                 <!-- more information -->
                 <div class="space-y-8">
-                    <ul>
+                    <ul class="sm:hidden">
                         <li class="flex gap-4">
                             <a href="/"> <button class="p-[10px] bg-fifth rounded-full flex justify-center items-center hover:bg-primary transition-all duration-200"> <img src="@/assets/icons/facebook.png" class="w-[25px] h-[25px] object-cover" /> </button> </a>
                             <a href="/"> <button class="p-[10px] bg-fifth rounded-full flex justify-center items-center hover:bg-primary transition-all duration-200"> <img src="@/assets/icons/instagram.png" class="w-[25px] h-[25px] object-cover" /> </button> </a>

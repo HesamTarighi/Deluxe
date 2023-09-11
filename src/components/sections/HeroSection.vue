@@ -56,9 +56,9 @@
 
     // data
     const slides = [
-        '/src/assets/images/cars-wallpaper/5.jpg',
-        '/src/assets/images/cars-wallpaper/4.jpg',
-        '/src/assets/images/cars-wallpaper/3.jpg'
+        './src/assets/images/cars-wallpaper/5.jpg',
+        './src/assets/images/cars-wallpaper/4.jpg',
+        './src/assets/images/cars-wallpaper/3.jpg'
     ]
     const activeSlide = ref(1)
     const animation = ref(false)
