@@ -39,8 +39,8 @@
 
     // data
     const products = [
-        { name: 'Avon Tires Turbospeed CR228-D', title: 'new arrival', image: 'cars-wallpaper/1.jpg' },
-        { name: 'BFGoodrich Tires g-Force Rival S 1.5', title: 'grab 25% off', image: 'cars-wallpaper/4.jpg' },
-        { name: 'Philips D.I.S. Xenon H.I.D. Headlights', title: 'grab 25% off', image: 'cars-wallpaper/6.jpg' }
+        { name: 'Avon Tires Turbospeed CR228-D', title: 'new arrival', image: 'images/cars-wallpaper/1.jpg' },
+        { name: 'BFGoodrich Tires g-Force Rival S 1.5', title: 'grab 25% off', image: 'images/cars-wallpaper/4.jpg' },
+        { name: 'Philips D.I.S. Xenon H.I.D. Headlights', title: 'grab 25% off', image: 'images/cars-wallpaper/6.jpg' }
     ]
 </script>

@@ -3,7 +3,7 @@
         <!-- Hero sections -->
         <section
         class="w-full h-screen min-h-screen bg-cover relative flex flex-col items-center z-10 before:w-full before:h-full before:-z-10 before:transition-all before:duration-300 after:w-full after:h-full after:bg-gradient-to-t after:from-secondary after:from-10% after:via-secondary/95 after:via-20% after:to-secondary/30 after:to-70% after:left-0 after:top-0 after:-z-10 max-lg:bg-[50%]"
-        :style="`background-image: url('${slides[activeSlide -1]}');`"
+        :style="`background-image: url('${dynamicImage(slides[activeSlide -1])}');`"
         :class="animation ? 'before:bg-secondary/100' : 'before:bg-secondary/0'"
         >
            <!-- Header -->
@@ -53,12 +53,13 @@
     import V_Header from '@/components/base/V_Header.vue'
     // import composabels
     import { ref, onMounted } from 'vue'
+    import dynamicImage from '@/composabels/dynamic_image.js'
 
     // data
     const slides = [
-        './src/assets/images/cars-wallpaper/5.jpg',
-        './src/assets/images/cars-wallpaper/4.jpg',
-        './src/assets/images/cars-wallpaper/3.jpg'
+        'images/cars-wallpaper/5.jpg',
+        'images/cars-wallpaper/4.jpg',
+        'images/cars-wallpaper/3.jpg'
     ]
     const activeSlide = ref(1)
     const animation = ref(false)

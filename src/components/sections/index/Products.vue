@@ -45,7 +45,7 @@
                         <!-- product image box -->
                         <div>
                             <div class="py-10">
-                                <img :src="'./src/assets/images/products/' + product.image" />
+                                <img :src="dynamicImage(product.image)" />
                             </div>
                         </div>
                         <hr class="border-[1px] border-secondary" />
@@ -81,17 +81,19 @@
     import T_Section from '@/templates/T_Section.vue'
     // import components
     import SelectInput from '@/components/SelectInput.vue'
+    // import composabels
+    import dynamicImage from '@/composabels/dynamic_image.js'
 
     // data
     const products = [
-        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
     ]
 </script>
