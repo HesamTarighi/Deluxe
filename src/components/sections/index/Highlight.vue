@@ -44,7 +44,7 @@
     import { ref, onMounted } from 'vue';
 
     // data
-    const deadLineHours = 412
+    const deadLineHours = 922
     const startTime = 1692750942841
     const endTime = new Date(startTime).setHours(deadLineHours)
     const remainingSeconds = ref()

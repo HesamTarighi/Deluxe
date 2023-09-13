@@ -35,7 +35,7 @@
 
             <!-- Products card -->
             <div class="flex">
-                <div class="grid grid-cols-3 gap-6 max-md:grid-cols-2 max-sm:grid-cols-1">
+                <div class="w-full grid grid-cols-3 gap-6 max-md:grid-cols-2 max-sm:grid-cols-1">
                     <!-- card -->
                     <div class="bg-fifth rounded-lg relative" v-for="(product, i) in products" :key="i">
                         <!-- badge -->
@@ -44,8 +44,8 @@
                         </div>
                         <!-- product image box -->
                         <div>
-                            <div class="py-10">
-                                <img :src="dynamicImage(product.image)" />
+                            <div class="flex justify-center py-10">
+                                <img :src="dynamicImage(product.image)" class="h-[200px] object-cover" />
                             </div>
                         </div>
                         <hr class="border-[1px] border-secondary" />
@@ -86,14 +86,14 @@
 
     // data
     const products = [
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png', new: true },
         { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png', new: true },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
-        { name: 'Tire part', price: 100.99, image: 'images/products/tire.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png', new: true },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png' },
+        { name: 'Tire part', price: 100.99, image: 'images/products/tire2.png' },
     ]
 </script>
