@@ -58,7 +58,7 @@
                             </div>
                             <div>
                                 <div>
-                                    <button class="bg-sixth sm-button rounded-md"> <img src="@/assets/icons/cart.png" class="w-[25px] h-[30px]" aria-label="icon" /> </button>
+                                    <button class="bg-sixth sm-button rounded-md"> <img src="/src/assets/icons/cart.png" class="w-[25px] h-[30px]" aria-label="icon" /> </button>
                                 </div>
                             </div>
                         </div>

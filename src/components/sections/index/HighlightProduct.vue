@@ -5,7 +5,7 @@
                 <div
                 class="w-full h-[450px] rounded-lg relative bg-cover z-10 after:w-full after:h-full after:top-0 after:left-0 after:from-secondary after:from-5% after:to-secondary/20 after:to-100% after:-z-10"
                 :class="i % 2 == 0 ? 'after:bg-gradient-to-r' : 'after:bg-gradient-to-l rtl'"
-                :style="`background-image: url('${product.image}');`"
+                :style="`background-image: url('${dynamicImage(product.image)}');`"
                 v-for="(product, i) in products" :key="i"
                 >
                     <div class="w-[70%] h-full flex flex-col justify-center px-24 gap-10 max-lg:w-[80%] max-md:w-[90%] max-sm:w-full max-sm:px-10">
@@ -34,11 +34,13 @@
 <script setup>
     // import template
     import T_Section from '@/templates/T_Section.vue'
+    // import composabels
+    import dynamicImage from '@/composabels/dynamic_image.js'
 
     // data
     const products = [
-        { name: 'Avon Tires Turbospeed CR228-D', title: 'new arrival', image: '/assets/images/cars-wallpaper/1.jpg' },
-        { name: 'BFGoodrich Tires g-Force Rival S 1.5', title: 'grab 25% off', image: '/assets/images/cars-wallpaper/4.jpg' },
-        { name: 'Philips D.I.S. Xenon H.I.D. Headlights', title: 'grab 25% off', image: '/assets/images/cars-wallpaper/6.jpg' }
+        { name: 'Avon Tires Turbospeed CR228-D', title: 'new arrival', image: 'cars-wallpaper/1.jpg' },
+        { name: 'BFGoodrich Tires g-Force Rival S 1.5', title: 'grab 25% off', image: 'cars-wallpaper/4.jpg' },
+        { name: 'Philips D.I.S. Xenon H.I.D. Headlights', title: 'grab 25% off', image: 'cars-wallpaper/6.jpg' }
     ]
 </script>
